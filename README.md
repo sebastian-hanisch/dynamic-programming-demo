@@ -1,5 +1,7 @@
 # Dynamische Programmierung am Rucksackproblem – Streamlit-Demo
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-dynamic-programming-demo.streamlit.app/)**
+
 Zweites Stück der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations
 Research und Machine Learning", **Exakte-Suche-Linie**: dasselbe 0/1-Rucksackproblem
 wie [branch-bound-demo](../branch-bound-demo) (erstes Stück dieser Linie), aber als
