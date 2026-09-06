@@ -7,6 +7,11 @@ bewusster **Kontrast** dazu, nicht als "Fix" - ein komplett anderer
 Exaktheits-Mechanismus (Tabellierung überlappender Teilprobleme statt Suchbaum +
 Schranken), mit einer eigenen, andersartigen Schwäche statt einer Verbesserung.
 
+Drittes (paralleles, nicht darauf aufbauendes) Stück derselben Linie ist
+[cutting-planes-demo](../cutting-planes-demo) - dort wird stattdessen die
+LP-Relaxierung selbst iterativ verschärft (Schnittebenen), als Vorläufer für ein
+künftiges Branch-&-Cut-Stück.
+
 ## Warum Kontrast, nicht Fix
 
 `branch-bound-demo`s eigener Mathe-Abschnitt weist schon selbst darauf hin: "Branch &
