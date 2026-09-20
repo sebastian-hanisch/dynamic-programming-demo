@@ -109,7 +109,7 @@ PRESET_HELP = {
 preset_cols = st.columns(len(C.PRESETS))
 for i, name in enumerate(C.PRESETS.keys()):
     with preset_cols[i]:
-        st.button(name, use_container_width=True, on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
+        st.button(name, width="stretch", on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
 
 st.caption(
     "🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, "
@@ -143,7 +143,7 @@ with st.sidebar:
 
     st.button(
         "🎲 Neue Instanz generieren",
-        use_container_width=True,
+        width="stretch",
         on_click=randomize_seed,
         help="Würfelt einen neuen Zufalls-Seed für Paketgewichte und -werte.",
     )
@@ -182,7 +182,7 @@ else:
             "Paket, das in der Tabelle berücksichtigt wurde.",
         )
     with play_col:
-        auto_play_fill = st.button("▶️ Füllen", use_container_width=True)
+        auto_play_fill = st.button("▶️ Füllen", width="stretch")
 
     effective_step = instance.n_items if auto_play_fill else step
 
@@ -198,7 +198,7 @@ else:
                 "fertige Tabelle gelesen.",
             )
         with trace_play_col:
-            auto_play_trace = st.button("▶️ Zurückverfolgen", use_container_width=True)
+            auto_play_trace = st.button("▶️ Zurückverfolgen", width="stretch")
     else:
         auto_play_trace = False
 
@@ -207,7 +207,7 @@ else:
     def _render(current_step, current_trace_step):
         table_slot.plotly_chart(
             build_table_figure(instance, result, current_step, current_trace_step, C.MAX_TABLE_COLS_RENDERED),
-            use_container_width=True, key=f"table_{current_step}_{current_trace_step}",
+            width="stretch", key=f"table_{current_step}_{current_trace_step}",
         )
 
     if auto_play_fill:
