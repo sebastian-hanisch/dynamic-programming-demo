@@ -55,7 +55,7 @@ def test_small_presets_stay_within_the_safety_limit():
     for name in [
         "Winziges Beispiel (Tabelle komplett sichtbar)",
         "Mittlere Instanz (Tabelle wächst)",
-        "Stark korrelierte Instanz (hart für B&B, DP ist es egal)",
+        "Stark korrelierte Instanz (DP ist die Korrelation egal)",
     ]:
         instance = generate_instance(**C.PRESETS[name])
         assert cells_total(instance.n_items, instance.capacity) <= C.MAX_CELLS_COMPUTED, name

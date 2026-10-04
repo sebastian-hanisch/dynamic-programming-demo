@@ -33,8 +33,10 @@ Schwächen, die keines der beiden Verfahren zum "besseren" machen:
 
 Zwei Presets demonstrieren das live und gegenläufig: eine Instanz mit winzigem `n`,
 aber absichtlich riesiger Kapazität (DP-Tabelle zu groß, Branch & Bound bleibt winzig),
-und eine mit größerem `n` und stark korrelierten Werten/Gewichten (Branch & Bounds
-eigener Härtefall - DP füllt exakt dieselbe Zellenzahl wie bei Korrelation 0).
+und eine mit größerem `n` und stark korrelierten Werten/Gewichten (DP füllt exakt dieselbe
+Zellenzahl wie bei Korrelation 0; Branch & Bound wird bei den kleinen Gewichten dieses
+Presets nur wenig schwerer - Mittel über 40 Seeds etwa 17 % mehr Knoten als bei Korrelation 0,
+bei Gewichten der Größenordnung 10 im Mittel etwa das Neunfache).
 
 ## Tabellen-Visualisierung
 

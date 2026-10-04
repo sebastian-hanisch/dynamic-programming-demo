@@ -38,7 +38,7 @@ PRESETS = {
     "Riesiges Gewichtslimit (DP stößt an seine Grenze)": {
         "n_items": 6, "capacity_fraction": 0.5, "correlation": 0.0, "weight_scale": 10_000, "seed": 3,
     },
-    "Stark korrelierte Instanz (hart für B&B, DP ist es egal)": {
+    "Stark korrelierte Instanz (DP ist die Korrelation egal)": {
         "n_items": 17, "capacity_fraction": 0.5, "correlation": 0.95, "weight_scale": 1, "seed": 3,
     },
 }

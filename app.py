@@ -104,7 +104,7 @@ PRESET_HELP = {
     "Winziges Beispiel (Tabelle komplett sichtbar)": "4 Pakete - die komplette Tabelle passt aufs Bild, jede Zeile einzeln durchklickbar.",
     "Mittlere Instanz (Tabelle wächst)": "10 Pakete, Gewichte im Zehnfachen - die Tabelle wird sichtbar breiter, hier beginnt die Spaltenanzeige herunterzusampeln.",
     "Riesiges Gewichtslimit (DP stößt an seine Grenze)": "Nur 6 Pakete, aber Gewichte im Zehntausendfachen - die Tabelle wäre zu groß, um sie zu berechnen. Branch & Bound bleibt davon völlig unbeeindruckt.",
-    "Stark korrelierte Instanz (hart für B&B, DP ist es egal)": "17 Pakete, Wert ≈ Gewicht - Branch & Bounds eigener Härtefall. Dynamische Programmierung füllt dabei exakt dieselbe Zellenzahl wie bei Korrelation 0.",
+    "Stark korrelierte Instanz (DP ist die Korrelation egal)": "17 Pakete, Wert ≈ Gewicht (Korrelation 0.95). Dynamische Programmierung füllt dabei exakt dieselbe Zellenzahl wie bei Korrelation 0. Branch & Bound braucht bei diesen kleinen Gewichten nur 111 Knoten - der Härtefall zeigt sich hier kaum (Mittel über 40 Seeds: nur etwa 17 % mehr Knoten als bei Korrelation 0), erst bei größeren Gewichten (Regler „Größenordnung der Gewichte“ auf 10: im Mittel etwa das Neunfache).",
 }
 preset_cols = st.columns(len(C.PRESETS))
 for i, name in enumerate(C.PRESETS.keys()):
