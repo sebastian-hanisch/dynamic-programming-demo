@@ -11,8 +11,8 @@ Schranken), mit einer eigenen, andersartigen Schwäche statt einer Verbesserung.
 
 Drittes (paralleles, nicht darauf aufbauendes) Stück derselben Linie ist
 [cutting-planes-demo](../cutting-planes-demo) - dort wird stattdessen die
-LP-Relaxierung selbst iterativ verschärft (Schnittebenen), als Vorläufer für ein
-künftiges Branch-&-Cut-Stück.
+LP-Relaxierung selbst iterativ verschärft (Schnittebenen), als Vorläufer für das
+Branch-&-Cut-Stück ([branch-cut-demo](../branch-cut-demo), viertes Stück der Linie).
 
 ## Warum Kontrast, nicht Fix
 
@@ -112,6 +112,4 @@ pytest tests/ -v
 
 ---
 
-Teil des [Operations-Research-Demo-Portfolios](https://sebastianhanisch.net/demos.html) von
-[Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
-Interesse an einer maßgeschneiderten Lösung? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html).

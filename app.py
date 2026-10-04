@@ -92,7 +92,7 @@ Im Diagramm weiter unten sehen Sie beide Phasen:
 - **Rückverfolgung**: sobald die Tabelle komplett ist, zieht eine grüne Linie den
   tatsächlich gewählten Pfad rückwärts durch die fertige Tabelle nach.
 
-In der Fachliteratur heißt dieses Prinzip **Memoisierung** - jedes Teilproblem wird
+In der Fachliteratur heißt dieses Prinzip **Memoisierung** (hier als Tabellierung von unten nach oben umgesetzt) - jedes Teilproblem wird
 genau einmal gelöst und das Ergebnis wiederverwendet, statt es bei jeder erneuten
 Anfrage neu zu berechnen. Was das Verfahren dafür eintauscht, steht im Abschnitt
 "📐 Mathematische Formulierung" weiter unten.
@@ -297,8 +297,9 @@ elif cmp["dp_best_value"] is None:
     )
 elif correlation >= 0.9 and instance.n_items >= 12:
     st.info(
-        "ℹ️ Bei dieser stark korrelierten Instanz braucht Branch & Bound spürbar mehr Knoten "
-        "als eine vergleichbare unkorrelierte Instanz gleicher Größe (siehe branch-bound-demo) "
+        "ℹ️ Bei stark korrelierten Instanzen braucht Branch & Bound im Mittel mehr Knoten "
+        "als bei vergleichbaren unkorrelierten Instanzen gleicher Größe (siehe branch-bound-demo; "
+        "bei einer einzelnen Instanz kann es auch umgekehrt sein) "
         "- Dynamische Programmierung füllt dagegen exakt dieselbe Zellenzahl wie immer, "
         "Korrelation hat auf die Tabellenfüllung keinerlei Einfluss."
     )
@@ -356,6 +357,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html)."
 )
